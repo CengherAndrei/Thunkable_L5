@@ -1,3 +1,9 @@
-apiKey: "AIzaSyCRDtRMJmGvAor7XUhczwscKosFmeNPwLg"
-
-databaseURL: "https://mychat-4ad74-default-rtdb.firebaseio.com"
+function start(player)
+ local clasament = Instance.new('IntValue')
+ clasament.Name = "leaderstats"
+ clasament.Parent = player
+ local scorul = Instance.new('IntValue')
+ scorul.Name = 'Scor'
+ scorul.Parent = clasament
+end
+game.Players.PlayerAdded:connect(start)
